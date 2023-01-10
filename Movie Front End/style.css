@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #131720;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.top-nav {
+  overflow: hidden;
+  background-color: inherit;
+  padding: 10px;
+}
+
+.top-nav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.top-nav .search-container {
+  float: right;
+}
+
+form {
+  background-color: #151f30;
+  width: 300px;
+  height: 43px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  font: 15px system-ui;
+  color: #000;
+  height: 100%;
+  width: 100%;
+  padding: 6px 9px;
+}
+
+.thumbnail {
+  height: 350px;
+  width: 300px;
+  border-radius: 19px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.card {
+  border-radius: 19px;
+  padding: 10px;
+  text-align: center;
+  background-color: #151f30;
+  height: 420px;
+}
+
+.card img, .card h3 {
+  width: 100%;
+}
+
+.card img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: small;
+}
+
+.review-icons {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+
+.review-card {
+  height: auto;
+}
+
+@media (max-width: 600px) {
+
+  .column {
+    width: 80%;
+    padding: 10px;
+    margin-left: 10%;
+  }
+
+  .card img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .card img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 768px) {
+  .column {
+    float: left;
+    width: 33%;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+  }
+}
